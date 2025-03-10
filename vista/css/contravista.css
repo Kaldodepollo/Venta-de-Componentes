@@ -1,0 +1,46 @@
+        /* Fondo animado con degradado de negro a gris */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(120deg, #000000, #4d4d4d);
+            background-size: 400% 400%;
+            animation: animateBackground 6s infinite;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white; /* Asegura que el texto sea legible */
+        }
+
+        /* Animación del fondo */
+        @keyframes animateBackground {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* Contenedor del formulario */
+        .container {
+            max-width: 600px;
+            padding: 30px;
+            background: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            color: black; /* Asegura que el texto interno sea visible */
+        }
+
+        /* Botón personalizado */
+        .btn-custom {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .btn-custom:hover {
+            background-color: #0056b3;
+        }

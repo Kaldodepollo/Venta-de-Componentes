@@ -1,0 +1,104 @@
+        /* Estilos generales */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        /* Fondo animado */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(120deg, #2c2c2c, #1e1e1e, #3a3a3a);
+            background-size: 300% 300%;
+            animation: moveBackground 8s infinite linear;
+            z-index: -1;
+        }
+
+        @keyframes moveBackground {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h2 {
+            color: #e0e0e0;
+            margin-bottom: 20px;
+        }
+
+        /* Estilos del formulario */
+        .form {
+            background-color: #1a1a1a; /* Fondo gris oscuro */
+            border: 1px solid #9147ff;
+            border-radius: 20px;
+            padding: 20px 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            width: 100%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .form label {
+            font-size: 20px;
+            color: #fff; /* Texto blanco */
+        }
+
+        .form input {
+            width: 100%;
+            padding: 10px 12px;
+            border-radius: 10px;
+            border: 1px solid rgba(105, 105, 105, 0.397); /* Bordes grises */
+            background-color: #333; /* Fondo gris más oscuro */
+            color: #fff;
+            font-size: 14px;
+            transition: border-color 0.3s ease;
+        }
+
+        .form input:focus {
+            outline: none;
+            border-color: #00bfff; /* Azul para el enfoque */
+        }
+
+        .form button {
+            width: 100%;
+            background-color: #00bfff; /* Botón azul */
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form button:hover {
+            background-color: #00bfff96; /* Azul más claro al pasar el cursor */
+        }
+
+        /* Estilos adicionales */
+        .form .alert {
+            background-color: #ff4d4d;
+            color: #fff;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            display: none;
+        }

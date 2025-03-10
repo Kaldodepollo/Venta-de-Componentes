@@ -1,0 +1,61 @@
+ /* Estilo para agregar imagen de fondo completa y centrada */
+ body, html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: url('../img/pc.jpg'); /* Ruta relativa a la imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Hace que el fondo se mantenga fijo al hacer scroll */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contenedor de inicio de sesión */
+.login-container {
+    background: rgba(0, 0, 0, 0.75); /* Fondo semitransparente */
+    padding: 40px 30px; /* Más espacio interno */
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más profunda */
+    max-width: 400px; /* Ancho máximo para evitar que se estire demasiado */
+    width: 100%; /* Asegura que se ajuste a pantallas pequeñas */
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: #ffdd57; /* Color llamativo para el título */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Espacio entre los campos */
+}
+
+.btn-primary {
+    background-color: #4a00e0;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #8e2de2;
+    transform: scale(1.05);
+}
+
+.text-danger {
+    font-size: 0.9rem;
+}

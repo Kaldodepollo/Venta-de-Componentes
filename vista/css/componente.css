@@ -1,0 +1,64 @@
+        /* Fondo de color tecnológico (gradiente) */
+        body {
+            background: linear-gradient(135deg, #1e3c72, #2a5298 100%); /* Gradiente de tonos oscuros */
+            color: #fff; /* Texto en blanco para contraste */
+        }
+
+        /* Barra de navegación */
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background: linear-gradient(45deg, #4a00e0, #8e2de2);
+            padding: 15px 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            gap: 20px;
+        }
+
+        /* Estilo de la tarjeta con sombra */
+        .card {
+            border-radius: 15px; /* Bordes redondeados */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra suave */
+            background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro para la tarjeta */
+        }
+
+        .card-body {
+            color: white;
+        }
+
+        /* Botón personalizado */
+        .btn-primary {
+            background-color: #007bff; /* Azul claro */
+            border-color: #0069d9;
+        }
+
+        /* Diseño de la imagen */
+        .card-img-top {
+            max-width: 300px;
+            margin: 0 auto;
+            display: block; /* Centrar la imagen */
+        }
+
+        /* Botón de Volver a inicio */
+        .btn-secondary {
+            background-color: #6c757d;
+            border-color: #5a6268;
+        }
+        /* Ajustar el espaciado del menú desplegable */
+.dropdown-menu {
+    margin-top: 5px;
+    border-radius: 5px;
+    min-width: 150px;
+}
+
+/* Mejorar la visibilidad del botón */
+.btn-outline-light {
+    border-color: #ccc;
+    color: #ffffff;
+}
+
+.btn-outline-light:hover {
+    background-color: #ffdd57;
+    color: #000;
+}
